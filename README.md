@@ -161,3 +161,8 @@ The project reports a confidence interval for mean daily withdrawals and a boots
 - Matplotlib
 
 No internet connection or paid API is required after dependencies are installed.
+## Project Visualisation
+
+### Branch Comparison
+
+![BankPulse Branch Comparison](outputs/branch_comparison.png)
