@@ -1,0 +1,29 @@
+Build validation performed in the creation environment.
+
+Main analysis exit code: 0
+Unit test exit code: 0
+
+Unit test output:
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_bayesian_update (test_core.TestBankPulse.test_bayesian_update) ... ok
+test_least_squares_linear_data (test_core.TestBankPulse.test_least_squares_linear_data) ... ok
+test_marginal_holding_cost (test_core.TestBankPulse.test_marginal_holding_cost) ... ok
+test_mean_confidence_interval_contains_mean (test_core.TestBankPulse.test_mean_confidence_interval_contains_mean) ... ok
+test_reserve_cost (test_core.TestBankPulse.test_reserve_cost) ... ok
+test_reserve_policy_validation (test_core.TestBankPulse.test_reserve_policy_validation) ... ok
+test_simulation_nonnegative (test_core.TestBankPulse.test_simulation_nonnegative) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.004s
+
+OK

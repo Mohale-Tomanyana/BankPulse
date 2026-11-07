@@ -1,0 +1,61 @@
+BANKPULSE — BRANCH CASH DEMAND & LIQUIDITY REPORT
+==========================================================
+
+All figures are based on synthetic educational data.
+
+BRANCH WITHDRAWAL SUMMARY
+           days      mean    median       std      min       max
+branch_id                                                       
+BR001       240  25607.94  25274.48   9767.91  1940.43  49802.41
+BR002       240  11928.14  11533.74   5250.88  1963.39  28165.89
+BR003       240  14641.54  13879.37   7105.87  1712.65  39416.15
+BR004       240  37257.07  37713.28  13582.05  8629.88  96870.07
+BR005       240   5544.24   5223.66   3185.19     0.00  16483.24
+
+BAYESIAN HIGH-DEMAND MONITORING
+branch_id  alpha_prior  beta_prior  high_days  normal_days  alpha_posterior  beta_posterior  posterior_mean  approx_95_lower  approx_95_upper
+    BR001          2.0         8.0         25           95             27.0           103.0          0.2077           0.1382           0.2772
+    BR002          2.0         8.0         16          104             18.0           112.0          0.1385           0.0793           0.1976
+    BR003          2.0         8.0         19          101             21.0           109.0          0.1615           0.0985           0.2246
+    BR004          2.0         8.0         21           99             23.0           107.0          0.1769           0.1116           0.2423
+    BR005          2.0         8.0         25           95             27.0           103.0          0.2077           0.1382           0.2772
+
+RESERVE POLICY SIMULATION
+branch_id  reserve_percentile  reserve_amount_R  normal_shortfall_probability  normal_average_cost_R  stress_shortfall_probability  stress_average_cost_R
+    BR001                0.80          29074.50                          0.20                  85.50                          0.67                 459.97
+    BR001                0.90          31541.97                          0.10                  58.71                          0.57                 338.64
+    BR001                0.95          35623.78                          0.07                  34.85                          0.40                 193.07
+    BR002                0.80          14388.40                          0.20                  53.89                          0.30                 103.92
+    BR002                0.90          15342.59                          0.10                  44.82                          0.20                  86.53
+    BR002                0.95          16548.81                          0.07                  38.35                          0.20                  69.16
+    BR003                0.80          17042.54                          0.20                  47.10                          0.60                 240.55
+    BR003                0.90          18848.28                          0.10                  28.01                          0.47                 166.23
+    BR003                0.95          20130.51                          0.07                  22.81                          0.33                 124.70
+    BR004                0.80          39371.65                          0.20                  88.65                          0.80                 839.84
+    BR004                0.90          42987.41                          0.10                  51.89                          0.67                 638.23
+    BR004                0.95          44576.11                          0.07                  42.58                          0.60                 556.81
+    BR005                0.80           7407.89                          0.20                  38.40                          0.33                  70.59
+    BR005                0.90           9692.78                          0.10                  16.44                          0.13                  30.92
+    BR005                0.95          10423.06                          0.07                  12.16                          0.13                  24.40
+
+LEAST-SQUARES TREND
+branch_id  daily_trend_slope_R  trend_intercept_R
+    BR001                -1.77           26011.64
+    BR002                -2.26           12269.54
+    BR003                 4.05           14374.40
+    BR004                 8.86           36336.57
+    BR005                 3.55            5182.51
+
+INTERPRETATION
+- A higher reserve generally reduces the chance and size of a cash shortfall.
+- A higher reserve also increases the amount of excess cash held on quieter days.
+- The lowest estimated cost depends on the illustrative cost assumptions.
+- Bayesian estimates quantify uncertainty about high-demand frequency.
+- A trend is descriptive and should not be treated as a reliable forecast by itself.
+
+LIMITATIONS
+- The data are simulated and do not represent a real bank.
+- Withdrawal sizes and counts follow simplified distributions.
+- Cost rates are illustrative and require operational validation.
+- The Bayesian interval is a normal approximation to the Beta posterior.
+- Results are not a regulatory liquidity measure or production recommendation.
