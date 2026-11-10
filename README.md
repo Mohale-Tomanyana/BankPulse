@@ -77,8 +77,7 @@ All data is synthetic and does not represent actual South African bank data. Cos
 ![BankPulse Branch Comparison](outputs/branch_comparison.png) 
 
 ---
-## My Philosophy
 
-> Every project should begin with a question worth answering, not a technology worth demonstrating.
+Copyright © 2026 Mohale Tomanyana. All rights reserved.
 
-I believe in using statistics, mathematics and programming to investigate meaningful problems, understand uncertainty and support evidence-based decision-making.
+This project was developed by Mohale Tomanyana for educational and portfolio purposes.
