@@ -165,4 +165,10 @@ No internet connection or paid API is required after dependencies are installed.
 
 ### Branch Comparison
 
-![BankPulse Branch Comparison](outputs/branch_comparison.png)
+![BankPulse Branch Comparison](outputs/branch_comparison.png) 
+
+---
+
+**Copyright © 2026 Mohale Tomanyana. All rights reserved.**
+
+This project was developed by Mohale Tomanyana for educational and portfolio purposes.
